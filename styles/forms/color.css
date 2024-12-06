@@ -1,0 +1,116 @@
+.color-input .eu{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.eu img{
+  width: 26px;
+  height: 26px;
+}
+
+.eu h3{
+  font: var(--text-sm-ballo);
+  color: var(--text-heading);
+}
+
+.color-input label{
+  font: var(--text-sm-opensans);
+  color: var(--text-heading);
+}
+
+.colors {
+  display: flex;
+  gap: .5rem;
+  margin-block: 1rem 1.75rem;
+}
+
+.colors input {
+  display: none;
+
+}
+
+.colors label {
+  display: block;
+  width: 2.7rem;  
+  height: 2.7rem; 
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  background: var(--shape-button);
+}
+
+.colors label::before {
+  content: '';
+  position: absolute;
+  top: 4px; 
+  left: 4px; 
+  right: 4px;
+  bottom: 4px;
+  border-radius: 999px;
+}
+
+.colors .blue + label::before {
+  background-color: blue;
+  margin: 1px;
+}
+
+.colors .navy + label::before {
+  background-color: var(--navy);
+  margin: 1px;
+}
+
+.colors .purple + label::before {
+  background-color: var(--purple);
+  margin: 1px;
+}
+
+.colors .fuschia + label::before {
+  background-color: var(--fuschia);
+  margin: 1px;
+}
+
+.colors .pink + label::before {
+  background-color: var(--pink);
+  margin: 1px;
+}
+
+.colors .red + label::before {
+  background-color: var(--feedback-danger);
+  margin: 1px;
+}
+
+.colors .orange + label::before {
+  background-color: var(--orange);
+  margin: 1px;
+}
+
+.colors .yellow + label::before {
+  background-color: var(--yellow);
+  margin: 1px;
+}
+
+.colors .lime + label::before {
+  background-color: var(--lime);
+  margin: 1px;
+}
+
+.colors .green + label::before {
+  background-color: var(--green);
+  margin: 1px;
+}
+
+.colors .cyan + label::before {
+  background-color: var(--cyan);
+  margin: 1px;
+}
+
+.colors input:checked + label, .colors input:hover + label{
+  border: 2px solid var(--brand-light)
+}
+
+
+
+
+

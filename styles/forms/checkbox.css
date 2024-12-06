@@ -1,0 +1,52 @@
+.check {
+  margin-bottom: 3rem;
+}
+
+.check label {
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+  font-weight: 400;
+  flex-wrap: nowrap;
+  margin-bottom: .625rem;
+  cursor: pointer;
+  color: var(--text-body);
+  position: relative;
+}
+
+.check label a{
+  color: var(--brand-light);
+  font-weight: 600;
+}
+
+.check input[type="checkbox"] {
+  display: none;
+}
+
+.check .checkbox-svg {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--input-stroke);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.check span{
+  margin-right: .75rem;
+}
+
+.check input[type="checkbox"]:checked + .checkbox-svg {
+  background-color: var(--input-base);
+  border-color: var(--brand-light);
+}
+
+.check input[type="checkbox"]:checked + .checkbox-svg::before {
+  content: '';
+  background: url(/assets/icons/check-hover.svg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}

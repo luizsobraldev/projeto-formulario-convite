@@ -1,0 +1,81 @@
+.form-group {
+  display: flex;
+  gap: 20px; 
+  align-items: flex-start;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.field-1{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.field-label {
+  margin-bottom: .875rem;
+  color: var(--text-body);
+  font: var(--text-sm-opensans);
+}
+
+/* Estilo dos botões de "Tipo" */
+.button-input {
+  display: flex;
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  font: var(--text-sm-opensans);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .54rem .93rem;
+  margin: .25rem;
+  color: var(--text-heading);
+  border-radius: .5rem;
+  cursor: pointer;
+  width: 100%;
+  height: 2.38rem;
+}
+
+.button:hover{
+  background-color: var(--shape-button);
+}
+
+.button:hover .button-icon-1{
+  content: url(/assets/icons/building-2-hover.svg);
+}
+
+.button:hover .button-icon-2{
+  content: url(/assets/icons/video-hover.svg);
+}
+
+.button img {
+  width: 20px;
+  height: 20px;
+}
+
+.input-hidden {
+  display: none;
+}
+
+.text-input {
+  padding-inline: 1rem;
+  font: var(--text-md-opensans);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  background-color: var(--input-base);
+  color: var(--input-placeholder);
+  height: 3rem;
+  outline: none;
+}
+
+.text-input:hover, .text-input:active, .text-input:focus{
+  border-color: var(--brand-light);
+}

@@ -1,0 +1,64 @@
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label{
+  font: var(--text-sm-opensans);
+  color: var(--text-body);
+  font-weight: 400;
+  margin-bottom: .75rem;
+}
+
+.input-wrapper input{
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  height: 3rem;
+  border-radius: .5rem;
+  padding-inline: 1rem;
+  color: var(--input-placeholder);
+  font: var(--text-md-opensans);
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.input-wrapper input:hover, .input-wrapper input:focus, .input-wrapper input:active{
+  border: 1px solid var(--brand-light);
+}
+
+/* tirar o icone de calendario do input */
+.input-wrapper input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+  display: none;
+}
+
+.error{
+  display: flex;
+  gap: .5rem;
+  display: none;
+}
+
+.error span{
+  color: var(--feedback-danger);
+  font: var(--text-xs-opensans);
+}
+
+.input-wrapper:invalid .error{
+  display: block;
+}
+
+.input-wrapper:invalid{
+  border-color: var(--feedback-danger);
+}
+
+.flex{
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-2{
+  flex: 1;
+}
+
+.flex-1{
+  flex: 1;
+}

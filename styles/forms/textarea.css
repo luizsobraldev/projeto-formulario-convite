@@ -1,0 +1,28 @@
+.textarea-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea-wrapper label{
+  margin-bottom: .875rem;
+  color: var(--text-body);
+  font: var(--text-sm-opensans);
+}
+
+.textarea-wrapper textarea{
+  background: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .875rem;
+  padding: 1rem;
+  font: var(--text-md-opensans);
+  color: var(--input-placeholder);
+  outline: none;
+  margin-bottom: 3rem;
+}
+
+textarea:hover, textarea:active, textarea:focus{
+  border-color: var(--brand-light);
+}
+
+
+

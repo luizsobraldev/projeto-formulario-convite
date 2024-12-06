@@ -1,0 +1,31 @@
+aside{
+  background: url(../assets/images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  border-radius: .75rem;
+  width: 400px;
+  height: 728px;
+}
+
+.aside-container{
+  padding: 2rem;
+}
+
+.aside-container > img{
+  display: flex;
+}
+
+.aside-container p{
+  color: var(--text-heading);
+  font: var(--text-md-opensans);
+  font-weight: 300;
+}
+
+.img-2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+

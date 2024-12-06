@@ -1,0 +1,54 @@
+.contact-wrapper{
+  padding-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--input-stroke)
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.title h3{
+  font: var(--text-sm-ballo);
+  color: var(--text-heading);
+}
+
+.dados{
+  display: flex;
+  flex-direction: row;
+}
+
+.dados label{
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.dados input{
+  width: 100%;
+}
+
+.input-error{
+  margin-bottom: 0 !important;
+}
+
+.error-2{
+  display: flex;
+  gap: .5rem;
+  margin-block: .5rem 1rem;
+}
+
+.error-2 span{
+  color: var(--feedback-danger);
+  font: var(--text-xs-opensans);
+}
+
+.input-wrapper:invalid .error{
+  display: block;
+}
+
+.input-wrapper:invalid{
+  border-color: var(--feedback-danger);
+}

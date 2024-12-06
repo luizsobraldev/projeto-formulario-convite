@@ -1,15 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root{
-  --font-leckerli: "Lickerli One", sans-serif;
-  --text-logo: 400 2.5rem/auto var(--font-leckerli);
+  --font-leckerli: "Leckerli One", sans-serif;
+  --text-logo: 400 2.5rem/1 var(--font-leckerli);
 
   --font-ballo: "Ballo 2", sans-serif;
-  --text-md-ballo: 700 1.75rem/auto var(--font-ballo);
-  --text-sm-ballo: 700 1.125rem/auto var(--font-ballo);
+  --text-md-ballo: 700 1.75rem/1 var(--font-ballo);
+  --text-sm-ballo: 700 1.125rem/1 var(--font-ballo);
 
   --font-opensans: "Open Sans", sans-serif;
-  --text-md-opensans: 500 1rem/auto var(--font-opensans);
-  --text-sm-opensans: 500 .875/auto var(--font-opensans);
-  --text-xs-opensans: 500 .75/auto var(--font-opensans);
+  --text-md-opensans: 400 1rem/1 var(--font-opensans);
+  --text-sm-opensans: 400 .875/1 var(--font-opensans);
+  --text-xs-opensans: 400 .75/1 var(--font-opensans);
 
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
@@ -28,8 +34,8 @@
   --feedback-danger: #FF5959;
 
   --input-base: #1C1F21;
-  --input-base: #363B40;
-  --input-base: #869198;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
 
   --shape-background: #131516;
   --shape-body: #212427;
@@ -38,4 +44,24 @@
 
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9 ;
+}
+
+html{
+  background-color: #131516;
+  overflow: hidden;
+}
+
+#app{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  overflow: hidden;
+  height: 100vh;
+  margin: 1.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+label{
+  font: var(--text-md-opensans);
 }
